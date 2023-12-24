@@ -1,0 +1,182 @@
+body {
+    background-color: #4e657a;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* header */
+.header {
+    height: 100px;
+    background-color: #567086;
+    padding: 0;
+}
+
+.header .wrap {
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header a {
+    text-align: center;
+}
+
+.header .title-admin {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 700;
+
+}
+
+.header a {
+    color: #fff;
+}
+
+.header .menu a {
+    font-size: 20px;
+}
+
+.header .menu a i {
+    font-size: 25px;
+}
+.menu:hover .sub-menu{
+    display: block;
+}
+.menu{
+    position: relative;
+    
+}
+
+.menu .sub-menu{
+    z-index: 999;
+    border: 1px solid #fff;
+    background-color:  rgba(92, 180, 235, 0.2);
+    backdrop-filter: blur(20px);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 190px;
+    left: 20px;
+}
+.menu .sub-menu li{
+    padding: 5px;
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+.menu .sub-menu li:hover{
+    background-color: #567086;
+    transition: 0.15s ;
+
+}
+/* end header */
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #567086;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .content {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* end footer */
+
+
+
+
+
+
+
+/* dashboard */
+.dashboard {
+    padding: 50px 0;
+}
+
+.dashboard .row:nth-child(2) {
+    padding-top: 35px;
+}
+
+.dashboard .box-1 {
+    height: 300px;
+    background: antiquewhite;
+    padding-top: 40px;
+    padding-left: 40px;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.dashboard .box-1 .title {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.dashboard .box-1 .content {
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.dashboard .a {
+    background: aqua;
+
+}
+
+.dashboard .b {
+    background: aquamarine;
+
+}
+
+.dashboard .c {
+    background: yellowgreen;
+
+}
+
+.dashboard .d {
+    background: burlywood;
+
+}
+
+/* end dashboard */
+
+
+
+
+/* products */
+.products {
+    padding: 50px 0;
+}
+
+.products .timkiem {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* end products */
