@@ -63,7 +63,7 @@
 					</div>
 				</form>
 
-				<img src="{{asset('public/backend/admin_login/images/bia.png')}}" class="login100-more" alt="">
+				<img src="{{asset('public/backend/admin_login/images/bg_login_admin.jpg')}}" class="login100-more" alt="">
 			</div>
 		</div>
 	</div>
