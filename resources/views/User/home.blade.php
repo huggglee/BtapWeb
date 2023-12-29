@@ -61,138 +61,44 @@
                 <h2 class="title text-uppercase font-weight-bold d-inline-block">Bàn phím</h2>
             </div>
             <div class="list-product">
-                <div id="ab" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                       <div class="row">
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                       </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
                     </div>
-                   <button class="carousel-control-prev" type="button" data-target="#ab" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#ab" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </button>
-                  </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                   </div>
             </div>
             <div class="xemthem"><a href="">Xem thêm</a></div>
         </div>
@@ -204,138 +110,44 @@
                 <h2 class="title text-uppercase font-weight-bold d-inline-block">Chuột máy tính</h2>
             </div>
             <div class="list-product">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                       <div class="row">
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                       </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
                     </div>
-                   <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </button>
-                  </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                   </div>
             </div>
             <div class="xemthem"><a href="">Xem thêm</a></div>
         </div>
@@ -351,138 +163,44 @@
                 <h2 class="title text-uppercase font-weight-bold d-inline-block">Thiết bị mạng</h2>
             </div>
             <div class="list-product">
-                <div id="ac" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                       <div class="row">
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                       </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
                     </div>
-                   <button class="carousel-control-prev" type="button" data-target="#ac" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#ac" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </button>
-                  </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                   </div>
             </div>
             <div class="xemthem"><a href="">Xem thêm</a></div>
         </div>
@@ -496,138 +214,44 @@
                 <h2 class="title text-uppercase font-weight-bold d-inline-block">Balo,Túi chống sốc</h2>
             </div>
             <div class="list-product">
-                <div id="ad" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                       <div class="row">
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                       </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
                     </div>
-                   <button class="carousel-control-prev" type="button" data-target="#ad" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#ad" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </button>
-                  </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                   </div>
             </div>
             <div class="xemthem"><a href="">Xem thêm</a></div>
         </div>
@@ -641,139 +265,44 @@
                 <h2 class="title text-uppercase font-weight-bold d-inline-block">Giá đỡ laptop</h2>
             </div>
             <div class="list-product">
-                <div id="ae" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                       <div class="row">
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="">
-                                <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                            <h3>
-                                Bàn Phím Không Dây DareU EK807G
-                            </h3>
-                            <strong class="price">535.000₫</strong>
-                            </a>
-                        </div>
-                       </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="">
-                                    <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
-                                <h3>
-                                    Bàn Phím Không Dây DareU EK807G
-                                </h3>
-                                <strong class="price">535.000₫</strong>
-                                </a>
-                            </div>
-                           </div>
-                      </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
                     </div>
-                   <button class="carousel-control-prev" type="button" data-target="#ae" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#ae" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </button>
-                  </div>
-                
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="d-block w-100" src="{{asset('public/Frontend//image/banphim/bp-1.jpeg')}}" alt="">
+                        <h3>
+                            Bàn Phím Không Dây DareU EK807G
+                        </h3>
+                        <strong class="price">535.000₫</strong>
+                        </a>
+                    </div>
+                   </div>
             </div>
 
             <div class="xemthem"><a href="">Xem thêm</a></div>

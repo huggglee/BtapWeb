@@ -77,10 +77,7 @@
                                 </a></li>
                             <li><a href="">Giá đỡ laptop
                                     <i class="fa-solid fa-computer-mouse"></i>
-                                </a></li>
-                            <li><a href="">Phần mềm
-                                    <i class="fa-solid fa-computer-mouse"></i>
-                                </a></li>
+                                </a></li>                        
                         </ul>
                     </div>
                     <div class="img-menu">
