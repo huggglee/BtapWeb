@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
+use Illuminate\Routing\Router;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +20,13 @@ use App\Http\Controllers\Admin\ProductController;
 |
 */
 
-Route::get('/', function () {
-    return view('User.home');
-});
+
+//User
+Route::get('/',[HomeController::class, 'index'])->name('index');
+Route::get('/login',[UserController::class,'login'])->name('user.login');
+Route::post('/login',[Usercontroller::class,'postLogin'])->name('postLogin');
+Route::get('/register',[UserController::class,'register'])->name('user.register');
+Route::post('/register',[Usercontroller::class,'postRegister'])->name('postRegister');
 
 Route::prefix('admin')->group(function () {
     Route::get('/',[AdminController::class,'index'])->name('admin.index');

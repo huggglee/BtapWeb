@@ -22,8 +22,8 @@
                             <i class="fa-solid fa-user"></i>
                             <ul>
                                 <li><a href="" class="font-weight-bold">Tài khoản</a></li>
-                                <li><a href="">Đăng ký / </a>
-                                    <a href="">Đăng nhập</a></li>
+                                <li><a href="{{route('user.register')}}">Đăng ký / </a>
+                                    <a href="{{route('user.login')}}">Đăng nhập</a></li>
                             </ul>
                         </li>
                         <li class="box-user d-flex align-items-center justify-content-center">
