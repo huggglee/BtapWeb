@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Product\ProductEditRequest;
+use App\Http\Requests\Product\ProductRequest;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
@@ -31,14 +34,21 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
+        DB::beginTransaction();
         if ($request->hasFile('image')) {
             $fileName = $request->image->getClientOriginalName();
             $request->image->storeAs('public/images', $fileName);
             $request->merge(['img' => $fileName]);
         }
         Product::create($request->all());
+        // Cập nhật lại các ID tăng dần
+        DB::statement('SET @new_id = 0;');
+        DB::statement('UPDATE products SET id = (@new_id := @new_id + 1);');
+
+        // Commit thay đổi
+        DB::commit();
         return redirect()->route('product.index');
     }
 
@@ -62,7 +72,7 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product)
+    public function update(ProductEditRequest $request, Product $product)
     {
         if ($request->hasFile('image')) {
             $fileName = $request->image->getClientOriginalName();
@@ -78,7 +88,14 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        DB::beginTransaction();
+
         $product->delete();
+        DB::statement('SET @new_id = 0;');
+        DB::statement('UPDATE products SET id = (@new_id := @new_id + 1);');
+
+        // Commit thay đổi
+        DB::commit();
         return redirect()->route('product.index');
     }
     public function find(Request $request)

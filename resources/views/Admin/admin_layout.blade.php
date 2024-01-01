@@ -14,49 +14,41 @@
 </head>
 
 <body>
-
     <div class="header">
         <div class="container">
             <div class="row wrap">
                 <div class="title-admin">
-                    <a href="">Admin</a>
+                    <a href="{{ route('admin.dashboard') }}">Admin</a>
                 </div>
                 <div class="row">
                     <div class="menu">
-                        <a href="">
+                        <a href="{{ route('admin.dashboard') }}">
                             <i class="fa-solid fa-gauge"></i>
                             <div>Trang chủ</div>
                         </a>
                     </div>
                     <div class="menu">
-                        <a href="">
+                        <a href="{{ route('account.index') }}">
                             <i class="fa-solid fa-user"></i>
                             <div class="menu1">Quản lý tài khoản</div>
                             <div>
                                 <ul class="sub-menu">
-                                    <li><a href="{{route('account.index')}}">Quản lý admin</a></li>
+                                    <li><a href="{{ route('account.index') }}">Quản lý admin</a></li>
                                     <li><a href="">Quản lý người dùng</a></li>
                                 </ul>
                             </div>
                         </a>
                     </div>
                     <div class="menu">
-                        <a href="{{route('category.index') }}">
+                        <a href="{{ route('category.index') }}">
                             <i class="fa-solid fa-list"></i>
                             <div>Quản lý danh mục</div>
                         </a>
                     </div>
                     <div class="menu">
-                        <a href="{{route('product.index')}}">
+                        <a href="{{ route('product.index') }}">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <div class="menu1">Quản lý sản phẩm
-                                {{-- <div>
-                                    <ul class="sub-menu">
-                                        <li><a href="">Gọng kính</a></li>
-                                        <li><a href="">Kính râm</a></li>
-                                        <li><a href="">Mắt kính</a></li>
-                                    </ul>
-                                </div> --}}
                             </div>
                         </a>
                     </div>
@@ -77,16 +69,13 @@
         </div>
     </div>
 
-
-
     <!-- content -->
     @yield('admin_content')
-
     <!-- end content -->
 
     <footer>
         <div class="content">
-            <div>Design by:Minh Quoc && Hung Le</div>
+            <div>Design by:HQHT</div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

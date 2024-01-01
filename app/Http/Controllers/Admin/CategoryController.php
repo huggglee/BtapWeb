@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Category\CategoryEditRequest;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\Category\CategoryRequest;
+use Illuminate\Support\Facades\DB;
 
 
 class CategoryController extends Controller
@@ -15,8 +17,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories=Category::all();
-        return view('Admin.Category.category',compact('categories'));
+        $categories = Category::all();
+        return view('Admin.Category.category', compact('categories'));
     }
 
     /**
@@ -32,9 +34,21 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
-        //
-        Category::create($request->all());
-        return redirect()->route('category.index');
+        DB::beginTransaction();
+        try {
+            Category::create($request->all());
+            // Cập nhật lại các ID tăng dần
+            DB::statement('SET @new_id = 0;');
+            DB::statement('UPDATE categories SET id = (@new_id := @new_id + 1);');
+
+            // Commit thay đổi
+            DB::commit();
+            return redirect()->route('category.index');
+        } catch (\Exception $e) {
+            // Rollback nếu có lỗi xảy ra
+            DB::rollback();
+            throw $e;
+        }
     }
 
     /**
@@ -50,13 +64,13 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        return view('Admin.Category.category_edit',compact('category'));
+        return view('Admin.Category.category_edit', compact('category'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Category $category)
+    public function update(CategoryEditRequest $request, Category $category)
     {
         $category->update($request->all());
         return redirect()->route('category.index');
@@ -67,7 +81,20 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        $category->delete();
-        return redirect()->route('category.index');
+        DB::beginTransaction();
+        try {
+            $category->delete();
+            // Cập nhật lại các ID tăng dần
+            DB::statement('SET @new_id = 0;');
+            DB::statement('UPDATE categories SET id = (@new_id := @new_id + 1);');
+
+            // Commit thay đổi
+            DB::commit();
+            return redirect()->route('category.index');
+        } catch (\Exception $e) {
+            // Rollback nếu có lỗi xảy ra
+            DB::rollback();
+            throw $e;
+        }
     }
 }
