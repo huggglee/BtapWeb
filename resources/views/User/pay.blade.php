@@ -36,24 +36,27 @@
                             </div>
                             <div class="sl-sanpham">
                                 <div id="quantity-container">
-                                    <a onclick="decreaseQuantity()"
+                                    <a onclick="decreaseQuantity('quantity1')"
                                         style="    border: 1px solid black;
-                                width: 25px;
-                                display: inline-block;
-                                text-align: center;
-                                font-size: 17px;
-                                font-weight: bold;
-                                margin-right: -5px;
-                               cursor: pointer">-</a>
-                                    <input min="0" type="number" id="quantity" value="1" style="padding:0;">
-                                    <a onclick="increaseQuantity()"
+                            width: 25px;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 17px;
+                            font-weight: bold;
+                            margin-right: -5px;
+                           cursor: pointer">-</a>
+                                    <input min="0" type="number" id="quantity1" value="1"
+                                        style="padding:0;    padding: 0;
+                                width: 50px;
+                                text-align: center;">
+                                    <a onclick="increaseQuantity('quantity1')"
                                         style="    border: 1px solid black;
-                                width: 25px;
-                                display: inline-block;
-                                text-align: center;
-                                font-size: 17px;
-                                font-weight: bold;
-                                margin-left: -6px;
+                            width: 25px;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 17px;
+                            font-weight: bold;
+                            margin-left: -6px;
 border-left: none; cursor: pointer">+</a>
                                 </div>
                             </div>
@@ -75,9 +78,28 @@ border-left: none; cursor: pointer">+</a>
                             </div>
                             <div class="sl-sanpham">
                                 <div id="quantity-container">
-                                    <button onclick="decreaseQuantity()">-</button>
-                                    <input type="number" id="quantity" value="1">
-                                    <button onclick="increaseQuantity()">+</button>
+                                    <a onclick="decreaseQuantity('quantity2')"
+                                        style="    border: 1px solid black;
+                            width: 25px;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 17px;
+                            font-weight: bold;
+                            margin-right: -5px;
+                           cursor: pointer">-</a>
+                                    <input min="0" type="number" id="quantity2" value="1"
+                                        style="padding:0;    padding: 0;
+                                width: 50px;
+                                text-align: center;">
+                                    <a onclick="increaseQuantity('quantity2')"
+                                        style="    border: 1px solid black;
+                            width: 25px;
+                            display: inline-block;
+                            text-align: center;
+                            font-size: 17px;
+                            font-weight: bold;
+                            margin-left: -6px;
+border-left: none; cursor: pointer">+</a>
                                 </div>
                             </div>
                             <div class="tong-sanpham">
