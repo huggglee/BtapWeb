@@ -151,7 +151,7 @@ border-left: none; cursor: pointer">+</a>
                         </div>
                         <div class="the">
                             <h3>Chúng tôi chấp nhận thanh toán</h3>
-                            <img src="../asset/image/payment.png" alt="">
+                            <img src="{{ asset('public/Frontend//image/payment_2.png') }}" alt="">
                         </div>
                     </div>
                 </div>

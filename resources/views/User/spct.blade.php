@@ -38,23 +38,27 @@
                         <input type="hidden" name="id" value="">
                         <div class="sl-sanpham" style=" padding: 30px 0px;">
                             <div id="quantity-container">
-                                <a onclick="decreaseQuantity()" style="    border: 1px solid black;
-                                    width: 25px;
-                                    display: inline-block;
-                                    text-align: center;
-                                    font-size: 17px;
-                                    font-weight: bold;
-                                    margin-right: -5px;
-                                   cursor: pointer">-</a>
-                                <input type="number" id="quantity" name="quantity" value="1" min="0" style=" width: 40px;
-                                    text-align: center; padding:0;">
-                                <a onclick="increaseQuantity()" style="    border: 1px solid black;
-                                    width: 25px;
-                                    display: inline-block;
-                                    text-align: center;
-                                    font-size: 17px;
-                                    font-weight: bold;
-                                    margin-left: -6px;
+                                <a onclick="decreaseQuantity('quantity1')"
+                                    style="    border: 1px solid black;
+                        width: 25px;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 17px;
+                        font-weight: bold;
+                        margin-right: -5px;
+                       cursor: pointer">-</a>
+                                <input min="0" type="number" id="quantity1" value="1"
+                                    style="padding:0;    padding: 0;
+                            width: 50px;
+                            text-align: center;">
+                                <a onclick="increaseQuantity('quantity1')"
+                                    style="    border: 1px solid black;
+                        width: 25px;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 17px;
+                        font-weight: bold;
+                        margin-left: -6px;
 border-left: none; cursor: pointer">+</a>
                             </div>
                         </div>

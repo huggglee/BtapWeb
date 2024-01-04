@@ -46,6 +46,7 @@ Route::get('/pay',[Usercontroller::class,'pay'])->name('pay');
 Route::prefix('admin')->group(function () {
     Route::get('/',[AdminController::class,'index'])->name('admin.index');
     Route::get('/dashboard',[AdminController::class,'dashboard'])->name('admin.dashboard');
+    Route::get('/order',[AdminController::class,'order'])->name('admin.order');
     Route::post('/login',[AdminController::class,'login'])->name('admin.login');
     Route::get('/logout',[AdminController::class,'logout'])->name('admin.logout');
     Route::resource('category',CategoryController::class);

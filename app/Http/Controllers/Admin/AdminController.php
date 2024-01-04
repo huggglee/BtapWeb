@@ -15,6 +15,9 @@ class AdminController extends Controller
     public function dashboard(){
         return view('Admin.dashboard');
     }
+    public function order(){
+        return view('Admin.order');
+    }
     public function login(Request $request){
         $admin_username = $request->admin_name;
         $admin_password = $request->admin_pass;

@@ -1,0 +1,15 @@
+
+/* products */
+.products {
+    padding: 50px 0;
+}
+
+.products .timkiem {
+    display: flex;
+    justify-content: end;
+}
+.table td, .table th
+{
+    border: none;
+}
+/* end products */
