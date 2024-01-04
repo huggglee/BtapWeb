@@ -29,6 +29,9 @@ Route::get('/register',[UserController::class,'register'])->name('user.register'
 Route::post('/register',[Usercontroller::class,'postRegister'])->name('postRegister');
 Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
 Route::get('/product/{value}',[HomeController::class,'show'])->name('show.product');
+Route::get('/gioithieu',[HomeController::class,'gioithieu'])->name('gioithieu');
+Route::get('/new',[HomeController::class,'new'])->name('new');
+Route::get('/tracuu',[HomeController::class,'tracuu'])->name('tracuu');
 
 Route::prefix('admin')->group(function () {
     Route::get('/',[AdminController::class,'index'])->name('admin.index');

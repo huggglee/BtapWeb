@@ -4,9 +4,8 @@
         <div class="content-header">
             <div class="row align-items-center" style="justify-content: space-between;">
                 <div class="header-logo">
-                    <a href="">
-                        <img src="https://pos.nvncdn.com/26be7c-108267/store/20211001_drDdKcUKHoG0paeW6h9xKvP7.png"
-                            alt="">
+                    <a href="{{ route('index') }}">
+                        <img src="{{ asset('public/Frontend//image/logo.png') }}" alt="">
                     </a>
                 </div>
                 <div class="header-search">
@@ -26,8 +25,9 @@
                                     </li>
                                     <li><a href="{{ route('user.logout') }}">Đăng xuất</a></li>
                                 @else
-                                    <li><a href="{{ route('user.register') }}">Đăng ký / </a>
-                                        <a href="{{ route('user.login') }}">Đăng nhập</a>
+                                    <li>
+                                        <a href="{{ route('user.login') }}">Đăng nhập / </a>
+                                        <a href="{{ route('user.register') }}">Đăng ký</a>
                                     </li>
                                 @endif
                             </ul>
@@ -58,10 +58,9 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="">Giới thiệu</a></li>
-                    <li><a href="">Tin tức</a></li>
-                    <li><a href="">Tra cứu đơn hàng</a></li>
-                    <li><a href="">Tuyển dụng</a></li>
+                    <li><a href="{{ route('gioithieu') }}">Giới thiệu</a></li>
+                    <li><a href="{{ route('new') }}">Tin tức</a></li>
+                    <li><a href="{{ route('tracuu') }}">Tra cứu đơn hàng</a></li>
                 </ul>
             </div>
         </div>

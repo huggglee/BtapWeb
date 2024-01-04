@@ -16,7 +16,20 @@ class HomeController extends Controller
     public function show($id)
     {
         $category=Category::find($id);
-        $product=$category->products()->get();
-        
+        $products=$category->products()->get();
+        // dd($products);
+        return view('user.list-1',compact('products','category'));
+    }
+    public function gioithieu()
+    {
+        return view('user.gioithieu');
+    }
+    public function new()
+    {
+        return view('user.new');
+    }
+    public function tracuu()
+    {
+        return view('user.tracuu');
     }
 }

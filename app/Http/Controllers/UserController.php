@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    public function login(){
+    public function login()
+    {
         return view('User.user_login');
     }
     public function postLogin(Request $request)
@@ -21,20 +22,22 @@ class UserController extends Controller
             return redirect()->route('user.login')->with('error', 'Tài khoản hoặc mật khẩu không chính xác');
         }
     }
-    public function register(){
+    public function register()
+    {
         return view('User.user_register');
     }
     public function postRegister(Request $request)
     {
-        if($request->password==$request->confirmPassword){
-        $request->merge(['password' => Hash::make($request->password)]);
-        User::create($request->all());
-        return redirect()->route('user.login')->with('success','Đăng ký thành công');
-        } else return redirect()->back()->with('error','Mật khẩu không trùng khớp');
+        if ($request->password == $request->confirmPassword) {
+            $request->merge(['password' => Hash::make($request->password)]);
+            User::create($request->all());
+            return redirect()->route('user.login')->with('success', 'Đăng ký thành công');
+        } else return redirect()->back()->with('error', 'Mật khẩu không trùng khớp');
     }
     public function logout()
     {
         Auth::logout();
         return redirect()->back();
     }
+    
 }

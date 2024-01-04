@@ -17,7 +17,7 @@
 }
 .header-search
 {
-    width: 50%;
+    width: 30%;
 }
 .header-form input
 {
@@ -158,7 +158,79 @@
 
 /* end section-2 */
 
-
+/* content-1 */
+.content-1 .breadcrumb-lock{
+    color:white;
+}
+.orderView > span {
+        font-style: italic;
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .form-inline {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .form-inline > .form-groups {
+        display: inline-block;
+        margin: 0px;
+    }
+    #frmIndexOrder .txtFill {
+        width: 50%;
+    }
+    #frmIndexOrder .form-groups input {
+        border: 1px solid #dedede;
+        padding: 10px;
+        width: 100%;
+    }
+    #frmIndexOrder .btn-danger {
+        border: none;
+        background: #eb1c24;
+        color: #fff;
+        padding: 11px 20px;
+        margin-left: -2px;
+    }
+    #frmIndexOrder .btn-danger:hover {
+        transition: all .3s;
+        opacity: 0.9;
+    }
+    .desOrderSearch {
+        width: 55%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    .desOrderSearch i {
+        display: block;
+        color: #333;
+        font-size: 12px;
+        text-align: center;
+    }
+    .table-responsive {
+        min-height: .01%;
+        overflow-x: auto;
+    }
+    .table-bordered tr th{
+        background: #f6f6f6;
+        color: #333;
+    }
+    .table tr td,
+    .table tr th{
+        text-align: center;
+    }
+    #noteStatus{
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    #noteStatus>p{
+        padding: 1px 0;
+        font-size: 13px;
+    }
+    .table{
+        margin: 20px 0;
+    }
+/* end content-1 */
 
 /* product */
 .product .title
@@ -223,11 +295,39 @@
     color: #e83a45;
 }
 /* end product */
+/* img-gioithieu */
+.qc-gt-1{
+    width:auto;
+    height:300px;
+}
 
+.new-1{
+    width: 100%; 
+    height: 200px;
+     object-fit: cover; margin: 10px;
+}
+/* end img-gioithieu */
+/* new-img */
+.new-2{
+    width: 100%;
+     height: 100px;
+     object-fit: cover;
+      margin: 10px;
+}
+/* end new-img */
+/* h-new-font-1 */
+.container .text-new h4 .h-new-font-1{
+    display: block;
+    margin: 0;
+}
+/* end h-new-font-1 */
 
-
-
-
+/* p-new font-2 */
+ .text-new .container{
+    border-bottom: 1px dashed black;
+    margin: 10px;
+}
+/* end p-new font-2 */
 
 /* footer */
 footer {
@@ -308,3 +408,146 @@ footer .element .body ul li span
 }
 
 /* end footer-area */
+*,::after,::before {
+    box-sizing: border-box;
+}
+/* Menu box tra cứu */
+#profileMenu{
+    padding: 0;
+}
+#profileMenu li,#profileContent ul li{
+    list-style: none;
+}
+#profileMenu li a{
+    display: block;
+    padding: 5px 10px;
+}
+#profileMenu li a i{
+    margin-right: 5px;
+}
+.sidebar{
+    border: 1px solid #e0d8d8;
+}
+.sidebar .box-heading p{
+    padding: 15px;
+    background: #eb1c24;
+    font-weight: bold;
+    color: #fff;
+}
+.sidebar .box-heading p i{
+    font-size: 19px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#profileContent{
+    padding: 0;
+}
+#profileContent .btn-use{
+    background: #eb1c24;
+    color: #fff;
+}
+#profileContent .profile select{
+    height: 36px;
+    width: 100%;
+    border-color: #91ad41;
+}
+#profileContent ul{
+    padding: 0;
+}
+#profileContent form.f .btns{
+    text-align: center;
+    margin-top: 25px;
+}
+#profileContent form.f .btns input{
+    border: none;
+    padding: 7px 10px;
+}
+#profileContent form.f li {
+    margin-bottom: 10px;
+}
+#profileContent form.f li label{
+    margin: 0;
+    width: 40%;
+}
+#profileContent form.f li:not(:last-child) input{
+    width: 60%;
+}
+.change-title{
+    font-size: 28px;
+}
+@media (max-width: 600px) {
+    #profileContent {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+/* tra cuu */
+.orderView > span {
+    font-style: italic;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+}
+.form-inline {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.form-inline > .form-groups {
+    display: inline-block;
+    margin: 0px;
+}
+#frmIndexOrder .txtFill {
+    width: 50%;
+}
+#frmIndexOrder .form-groups input {
+    border: 1px solid #dedede;
+    padding: 10px;
+    width: 100%;
+}
+#frmIndexOrder .btn-danger {
+    border: none;
+    background: #eb1c24;
+    color: #fff;
+    padding: 11px 20px;
+    margin-left: -2px;
+}
+#frmIndexOrder .btn-danger:hover {
+    transition: all .3s;
+    opacity: 0.9;
+}
+.desOrderSearch {
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.desOrderSearch i {
+    display: block;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+.table-bordered tr th{
+    background: #f6f6f6;
+    color: #333;
+}
+.table tr td,
+.table tr th{
+    text-align: center;
+}
+#noteStatus{
+    text-align: left;
+    margin-bottom: 30px;
+}
+#noteStatus>p{
+    padding: 1px 0;
+    font-size: 13px;
+}
+.table{
+    margin: 20px 0;
+}
