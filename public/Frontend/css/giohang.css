@@ -1,0 +1,192 @@
+.giohang
+{
+    background-color: #F7F7F7;
+}
+.giohang .wrap
+{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 130px;
+    padding: 40px 0px 0px 0px;
+}
+.giohang .sanpham
+{
+    width: 69%;
+    padding: 13px 15px 0px 15px;
+}
+.giohang .sanpham .title-sanpham
+{
+    display: flex;
+    border-bottom: 1px solid #C4C4C4;
+}
+.giohang .sanpham .title-sanpham .title
+{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    color: #000000;
+    padding: 10px;
+}
+.giohang .sanpham .title-sanpham .title:nth-child(1)
+{
+    width: 40%;
+    padding-left: 0;
+}
+.giohang .sanpham .title-sanpham .title:nth-child(2)
+{
+    width: 30%;
+    text-align: center;
+}
+.giohang .sanpham .title-sanpham .title:nth-child(3)
+{
+    width: 15%;
+}
+.giohang .sanpham .title-sanpham .title:nth-child(4)
+{
+    width: 15%;
+}
+.giohang .sanpham .tt-sanpham {
+  
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: #F2F2F200;
+    padding: 8px 20px 0px 0px;
+    grid-row-gap: 30px;
+}
+.giohang .sanpham .tt-sanpham .img-sanpham img
+{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #F2F2F2;
+    border-radius: 4px 4px 4px 4px;
+    width: 120px;
+    min-width: 120px;
+    margin-right: 25px;
+}
+.giohang .sanpham .tt-sanpham .img-sanpham .tensp 
+{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+    color: #000000;
+}
+#quantity-container {
+    text-align: center;
+  }
+
+  #quantity {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .giohang .sanpham .tt-sanpham .hang-sanpham
+  {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #0000001A;
+  }
+  .giohang .sanpham .tt-sanpham .hang-sanpham .gia-sanpham p
+  {
+    margin-left: 145px;
+  }
+  .giohang .sanpham .tt-sanpham .hang-sanpham .sl-sanpham 
+  {
+    margin-left: 80px;
+  }
+  .giohang .sanpham .tt-sanpham .hang-sanpham .tong-sanpham 
+  {
+    margin-left: 35px;
+  }
+
+
+  .chucnang-sanpham
+  {
+    padding-top: 30px;
+    border-top: 3px solid #C4C4C4;
+  }
+  .chucnang-sanpham button a
+  {
+    color: white;
+    font-weight: 600;
+  }
+  .chucnang-sanpham button
+  {
+    padding: 12px;
+    color: white;
+    background-color: #ef6a6f;
+    border: none;
+    font-weight: 600;
+  }
+  .chucnang-sanpham .tieptuc
+  {
+    margin-right: 190px;
+  }
+  .chucnang-sanpham .capnhat
+  {
+    margin-right: 10px;
+  }
+
+
+
+
+.thanhtoan
+{
+    background-color: #ededed;
+    width: 30%;
+    padding: 24px;
+    height: 385px;
+}
+.thanhtoan h3
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.thanhtoan .tieude 
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.thanhtoan .tamtinh
+{
+    padding: 24px 0px;
+    border-style: dashed;
+    border-width: 1px 0px 0px 0px;
+    border-color: #0000001A;
+}
+.thanhtoan .tong
+{
+    padding: 24px 0px;
+    border-style: dashed;
+    border-width: 1px 0px 0px 0px;
+    border-color: #0000001A;
+}
+
+.thanhtoan .tinhtien button
+{
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color: #ef6a6f;
+    border: none;
+    font-weight: 600;
+}
+.thanhtoan .the 
+{
+    padding: 20px 0;
+}
+.thanhtoan .the h3
+{
+    text-align: center;
+    padding-bottom: 20px;
+}

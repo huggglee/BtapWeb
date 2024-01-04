@@ -36,6 +36,8 @@ Route::get('/gioithieu',[Usercontroller::class,'gioithieu'])->name('gioithieu');
 Route::get('/new',[Usercontroller::class,'new'])->name('new');
 Route::get('/tracuu',[Usercontroller::class,'tracuu'])->name('tracuu');
 Route::get('/spct',[Usercontroller::class,'spct'])->name('spct');
+Route::get('/pay',[Usercontroller::class,'pay'])->name('pay');
+
 
 
 
