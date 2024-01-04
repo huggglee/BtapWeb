@@ -32,4 +32,12 @@ class HomeController extends Controller
     {
         return view('user.tracuu');
     }
+    public function spct()
+    {
+        return view('user.spct');
+    }
+    public function pay()
+    {
+        return view('user.pay');
+    }
 }

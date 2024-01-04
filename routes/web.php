@@ -32,10 +32,14 @@ Route::get('/product/{value}',[HomeController::class,'show'])->name('show.produc
 Route::get('/gioithieu',[HomeController::class,'gioithieu'])->name('gioithieu');
 Route::get('/new',[HomeController::class,'new'])->name('new');
 Route::get('/tracuu',[HomeController::class,'tracuu'])->name('tracuu');
+Route::get('/spct',[HomeController::class,'spct'])->name('spct');
+Route::get('/pay',[HomeController::class,'pay'])->name('pay');
+
 
 Route::prefix('admin')->group(function () {
     Route::get('/',[AdminController::class,'index'])->name('admin.index');
     Route::get('/dashboard',[AdminController::class,'dashboard'])->name('admin.dashboard');
+    Route::get('/order',[AdminController::class,'order'])->name('admin.order');
     Route::post('/login',[AdminController::class,'login'])->name('admin.login');
     Route::get('/logout',[AdminController::class,'logout'])->name('admin.logout');
     Route::resource('category',CategoryController::class);

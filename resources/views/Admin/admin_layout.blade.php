@@ -30,11 +30,12 @@
                     <div class="menu">
                         <a href="{{ route('account.index') }}">
                             <i class="fa-solid fa-user"></i>
-                            <div class="menu1">Quản lý tài khoản</div>
+                            <div class="menu1">Quản lý</div>
                             <div>
                                 <ul class="sub-menu">
                                     <li><a href="{{ route('account.index') }}">Quản lý admin</a></li>
                                     <li><a href="">Quản lý người dùng</a></li>
+                                    <li><a href="{{ route('admin.order') }}">Quản lý đơn hàng</a></li>
                                 </ul>
                             </div>
                         </a>
