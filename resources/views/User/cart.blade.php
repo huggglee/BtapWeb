@@ -17,7 +17,7 @@
                             @foreach ($cart->list() as $value)
                                 <div class="tt-sanpham">
                                     <div class="hang-sanpham" style="display: flex;align-items: center;">
-                                        <div class="img-sanpham" style="position: relative">
+                                        <div class="img-sanpham col-6" style="position: relative; padding-left:0px;">
                                             <a href="{{ route('spct', $value['productID']) }}"
                                                 style="display: flex; align-items: center;">
                                                 <img src="{{ asset('public/storage//images/' . $value['img']) }}"
@@ -32,24 +32,24 @@
                                                     class="del-x"><i class="fa-solid fa-xmark"></i></a>
                                             </div>
                                         </div>
-                                        <div class="gia-sanpham">
-                                            <p>{{ number_format($value['price']) }}</p>
+                                        <div class="gia-sanpham col-2" style="padding-left: 20px; padding-right:0px">
+                                            <p style="margin-left: 0px;">{{ number_format($value['price']) }}</p>
                                         </div>
-                                        <div class="sl-sanpham">
+                                        <div class="sl-sanpham col-3" style="margin-left:5px;">
                                             <div id="quantity-container">
                                                 <a onclick="decreaseQuantity({{ $value['productID'] }})"
                                                     style="    border: 1px solid black;
                                     width: 25px;
                                     display: inline-block;
                                     text-align: center;
-                                    font-size: 17px;
+                                    font-size: 16px;
                                     font-weight: bold;
                                     margin-right: -5px;
                                     cursor: pointer">-</a>
                                                 <input min="0" type="number"
                                                     name="product[{{ $value['productID'] }}]" id="{{ $value['productID'] }}"
                                                     value="{{ $value['quantity'] }}"
-                                                    style="padding:0;    padding: 0;
+                                                    style="padding:0;   border:1px solid;
                                         width: 50px;
                                         text-align: center;">
                                                 <a onclick="increaseQuantity('{{ $value['productID'] }}')"
@@ -57,13 +57,13 @@
                                     width: 25px;
                                     display: inline-block;
                                     text-align: center;
-                                    font-size: 17px;
+                                    font-size: 16px;
                                     font-weight: bold;
                                     margin-left: -6px;
                                     border-left: none; cursor: pointer">+</a>
                                             </div>
                                         </div>
-                                        <div class="tong-sanpham">
+                                        <div class="tong-sanpham" style="margin-left: -20px;">
                                             <p>{{ number_format($value['quantity'] * $value['price']) }}</p>
                                         </div>
                                     </div>

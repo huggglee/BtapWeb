@@ -46,12 +46,12 @@
                         width: 25px;
                         display: inline-block;
                         text-align: center;
-                        font-size: 17px;
+                        font-size: 16px;
                         font-weight: bold;
                         margin-right: -5px;
                        cursor: pointer">-</a>
                                     <input min="0" type="number" name="quantity" id="{{$product->id}}" value="1"
-                                        style="padding:0;    padding: 0;
+                                        style="padding:0;border:1px solid;
                             width: 50px;
                             text-align: center;">
                                     <a onclick="increaseQuantity({{$product->id}})"
@@ -59,7 +59,7 @@
                         width: 25px;
                         display: inline-block;
                         text-align: center;
-                        font-size: 17px;
+                        font-size: 16px;
                         font-weight: bold;
                         margin-left: -6px;
 border-left: none; cursor: pointer">+</a>
