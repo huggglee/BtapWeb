@@ -62,4 +62,8 @@ class UserController extends Controller
     {
         return view('user.tracuu');
     }
+    public function spct()
+    {
+        return view('user.spct');
+    }
 }

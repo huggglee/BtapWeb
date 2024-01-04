@@ -1,0 +1,70 @@
+.sanpham .title-iteam li span
+{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 17px;
+    line-height: 1.4em;
+    
+}
+.sanpham .title-iteam li
+{
+    padding-right: 10px;
+}
+.sanpham .title-iteam li i{
+    font-size: 10px;
+    padding-right: 3px;
+    color: #eb1c24;
+}
+.sanpham h1
+{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.sanpham .gia-sp
+{
+    color: #FF594F;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    padding-top: 17px;
+    padding-bottom: 30px;
+}
+.sanpham .themgh
+{
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF594F;
+    color: white;
+    border: 1px solid;
+}
+.sanpham .themgh:hover
+{
+    color: #FF594F;
+    background-color: white;
+}
+.sanpham .mota h2
+{
+    position: relative;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+.sanpham .mota h2::after
+{
+    content: "";
+    background: #e41b35;
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+.sanpham .mota ul li
+{
+    padding-bottom: 5px;
+}
