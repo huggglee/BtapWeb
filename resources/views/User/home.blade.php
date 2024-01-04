@@ -59,14 +59,14 @@
             <div class="banphim">
                 @foreach ($categories as $category)
                     <div class="row">
-                        <h2 class="title text-uppercase font-weight-bold d-inline-block">{{ $category->name }}</h2>
+                        <h2 class="title text-uppercase font-weight-bold d-inline-block">{{$category->name }}</h2>
                     </div>
                     <div class="list-product">
                         <div class="row">
                             @foreach ($category->products as $product)
                                 @if ($loop->iteration <= 4)
                                     <div class="col-md-3">
-                                        <a href="">
+                                        <a href="{{route('spct',$product->id)}}">
                                             <img class="d-block w-100"
                                                 src="{{ asset('public/storage//images/' . $product->img) }}" alt="">
                                             <h3>
@@ -79,7 +79,7 @@
                             @endforeach
                         </div>
                     </div>
-                    <div class="xemthem"><a href="">Xem thêm</a></div>
+                    <div class="xemthem"><a href="{{route('show.product',$category->id)}}">Xem thêm</a></div>
                 @endforeach
             </div>
         </div>

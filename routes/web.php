@@ -1,12 +1,16 @@
 <?php
 
+use App\Helper\Cart;
 use App\Http\Controllers\Admin\AccountController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserController;
+use App\Models\Order;
 use Illuminate\Routing\Router;
 
 /*
@@ -32,8 +36,16 @@ Route::get('/product/{value}',[HomeController::class,'show'])->name('show.produc
 Route::get('/gioithieu',[HomeController::class,'gioithieu'])->name('gioithieu');
 Route::get('/new',[HomeController::class,'new'])->name('new');
 Route::get('/tracuu',[HomeController::class,'tracuu'])->name('tracuu');
-Route::get('/spct',[HomeController::class,'spct'])->name('spct');
-Route::get('/pay',[HomeController::class,'pay'])->name('pay');
+Route::get('/product/spct/{value}',[HomeController::class,'spct'])->name('spct');
+
+//Cart
+Route::get('/cart',[CartController::class,'index'])->name('cart.index');
+Route::post('/add-cart',[CartController::class,'add'])->name('cart.add');
+Route::get('/del-cart/{productID}',[CartController::class,'delete'])->name('cart.delete');
+Route::get('/delAll',[CartController::class,'deleteAll'])->name('cart.deleteAll');
+Route::post('/up-cart',[CartController::class,'update'])->name('cart.update');
+Route::get('/pay',[OrderController::class,'pay'])->name('cart.pay');
+Route::post('/paid',[OrderController::class,'paid'])->name('cart.paid');
 
 
 Route::prefix('admin')->group(function () {

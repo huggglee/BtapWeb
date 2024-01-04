@@ -1,167 +1,86 @@
 @extends('User.index')
 @section('content')
     <link rel="stylesheet" href="{{ asset('public/Frontend//css/giohang.css') }}">
-
-
-
-    <div class="giohang">
+    <div class="form-tt" style="padding: 40px 0;">
         <div class="container">
-            <div class="wrap">
-
-
-                <div class="sanpham">
-                    <div class="title-sanpham">
-                        <div class="title">Thông tin sản phẩm</div>
-                        <div class="title">Giá</div>
-                        <div class="title">Số Lượng</div>
-                        <div class="title">Tổng Cộng</div>
-                    </div>
-                    <div class="tt-sanpham">
-                        <div class="hang-sanpham" style="display: flex;align-items: center;">
-                            <div class="img-sanpham" style="position: relative">
-                                <a href="" style="display: flex; align-items: center;">
-                                    <img src="{{ asset('public/storage//images/bp-1.jpeg') }}" alt="">
-                                    <div class="tensp">GK - 550CN040</div>
-                                </a>
-                                <div class="del" style="margin-left:10px ; ">
-                                    <a href=""
-                                        style="position: absolute; color:darkgray;top: 0;
-                                left: 105px;
-                                font-size: 20px;"
-                                        class="del-x"><i class="fa-solid fa-xmark"></i></a>
-                                </div>
-                            </div>
-                            <div class="gia-sanpham">
-                                <p>230.000</p>
-                            </div>
-                            <div class="sl-sanpham">
-                                <div id="quantity-container">
-                                    <a onclick="decreaseQuantity('quantity1')"
-                                        style="    border: 1px solid black;
-                            width: 25px;
-                            display: inline-block;
-                            text-align: center;
-                            font-size: 17px;
-                            font-weight: bold;
-                            margin-right: -5px;
-                           cursor: pointer">-</a>
-                                    <input min="0" type="number" id="quantity1" value="1"
-                                        style="padding:0;    padding: 0;
-                                width: 50px;
-                                text-align: center;">
-                                    <a onclick="increaseQuantity('quantity1')"
-                                        style="    border: 1px solid black;
-                            width: 25px;
-                            display: inline-block;
-                            text-align: center;
-                            font-size: 17px;
-                            font-weight: bold;
-                            margin-left: -6px;
-border-left: none; cursor: pointer">+</a>
-                                </div>
-                            </div>
-                            <div class="tong-sanpham">
-                                <p>123321</p>
-                            </div>
+          <div class="row">
+            <div class="col-8">
+                <form action="{{route('cart.paid')}}" method="post">
+                    @csrf
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="hovaten">Họ và tên</label>
+                            <input type="text" name="name" class="form-control" id="hovaten">
                         </div>
-                    </div>
-                    <div class="tt-sanpham">
-                        <div class="hang-sanpham" style="display: flex;align-items: center;">
-                            <div class="img-sanpham">
-                                <a href="" style="display: flex; align-items: center;">
-                                    <img src="asset/image/banphim/bp-1.jpeg" alt="">
-                                    <div class="tensp">GK - 550CN040</div>
-                                </a>
-                            </div>
-                            <div class="gia-sanpham">
-                                <p>230.000</p>
-                            </div>
-                            <div class="sl-sanpham">
-                                <div id="quantity-container">
-                                    <a onclick="decreaseQuantity('quantity2')"
-                                        style="    border: 1px solid black;
-                            width: 25px;
-                            display: inline-block;
-                            text-align: center;
-                            font-size: 17px;
-                            font-weight: bold;
-                            margin-right: -5px;
-                           cursor: pointer">-</a>
-                                    <input min="0" type="number" id="quantity2" value="1"
-                                        style="padding:0;    padding: 0;
-                                width: 50px;
-                                text-align: center;">
-                                    <a onclick="increaseQuantity('quantity2')"
-                                        style="    border: 1px solid black;
-                            width: 25px;
-                            display: inline-block;
-                            text-align: center;
-                            font-size: 17px;
-                            font-weight: bold;
-                            margin-left: -6px;
-border-left: none; cursor: pointer">+</a>
-                                </div>
-                            </div>
-                            <div class="tong-sanpham">
-                                <p>123321</p>
-                            </div>
+                        <div class="form-group col-md-6">
+                            <label for="sdt">Số điện thoại</label>
+                            <input type="phone" name="phone" class="form-control" id="sdt">
                         </div>
+                    </div>                 
+                    <div class="form-group">
+                        <label for="diachi">Địa chỉ</label>
+                        <input type="text" name="address" class="form-control" id="diachi">
                     </div>
-                    <div class="chucnang-sanpham">
-                        <button class="tieptuc">
-                            <a href="">Tiếp Tục Mua Hàng</a>
-                        </button>
-                        <button class="capnhat">Cập Nhật Giỏ Hàng</button>
-                        <button class="xoa">Xóa Tất Cả Sản Phẩm</button>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Thông tin bổ sung</label>
+                        <textarea class="form-control" name="add_infor" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                </div>
-
-
-
-
-                <div class="thanhtoan">
+                    <button type="submit" class="btn btn-primary"
+                        style="padding: 12px;
+                color: white;
+                background-color: #ef6a6f;
+                border: none;
+                font-weight: 600;
+                width: 180px;">Đặt
+                        hàng</button>
+                </form>
+            </div>
+            <div class="col-4">
+                <div class="thanhtoan" style="width:100%">
                     <div class="tt-thanhtoan">
                         <div class="tieude">
                             <h3>Thông Tin Thanh Toán</h3>
                         </div>
                         <div class="tamtinh"
                             style="display: flex;
-                    align-items: center;
-                    justify-content: space-between;">
+                        align-items: center;
+                        justify-content: space-between;">
                             <h3>
                                 Tạm Tính
                             </h3>
                             <div class="gia">
-                                <strong>123</strong>
+                                <strong>{{ number_format($cart->totalPrice()) }}</strong>
                             </div>
                         </div>
                         <div class="tong"
                             style="display: flex;
-                    align-items: center;
-                    justify-content: space-between;">
+                        align-items: center;
+                        justify-content: space-between;">
                             <h3>
                                 Tổng
                             </h3>
                             <div class="gia">
-                                <strong>123</strong>
+                                <strong>{{ number_format($cart->totalPrice()) }}</strong>
                             </div>
                         </div>
-                        <div class="tinhtien">
-                            <button>TIến hành thanh toán</button>
-                        </div>
                         <div class="the">
-                            <h3>Chúng tôi chấp nhận thanh toán</h3>
+                            <h3 style="padding-bottom: 5px;font-weight:bold">Chúng tôi chấp nhận thanh toán</h3>
                             <img src="{{ asset('public/Frontend//image/payment_2.png') }}" alt="">
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
+          </div>
         </div>
     </div>
 
 
-    <script src="{{ asset('public/Frontend//js/spct.js') }}"></script>
+
+
+
+
+
+
+
+    
 @endsection

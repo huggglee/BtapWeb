@@ -35,7 +35,7 @@
                         <li class="box-user d-flex align-items-center justify-content-center">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <ul>
-                                <li><a href="" class="font-weight-bold">Giỏ hàng</a></li>
+                                <li><a href="{{route('cart.index')}}" class="font-weight-bold">Giỏ hàng</a></li>
                                 <li><a href="">Vận chuyển toàn quốc</a></li>
                             </ul>
                         </li>

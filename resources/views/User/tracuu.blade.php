@@ -7,8 +7,8 @@
         <div class="row">
             <div class="breadcrumb-lock col-12">
                 <ul class="breadcrumb">
-                    <li><a href="index.html">Trang chủ /</a></li>
-                    <li><a href="tracuu.html">/ Tra cứu</a></li>
+                    <li><a href="{{route('index')}}">Trang chủ /</a></li>
+                    <li><a href="#">/ Tra cứu</a></li>
                 </ul>            
             <h3 class="text-center m-0">Tìm kiếm đơn hàng</h3>
             </div>

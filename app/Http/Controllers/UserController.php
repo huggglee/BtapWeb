@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RegisterRequest;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,7 +27,7 @@ class UserController extends Controller
     {
         return view('User.user_register');
     }
-    public function postRegister(Request $request)
+    public function postRegister(RegisterRequest $request)
     {
         if ($request->password == $request->confirmPassword) {
             $request->merge(['password' => Hash::make($request->password)]);

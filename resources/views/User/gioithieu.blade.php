@@ -8,10 +8,10 @@
             <div class="breadcrumb-lock col-12">
                 <ul class="breadcrumb">
                     <li>
-                        <a href="/">Trang chủ /</a>
+                        <a href="{{route('index')}}">Trang chủ / </a>
                     </li>
                     <li>
-                        <a href="gioithieu.html">/ Giới thiệu</a>
+                        <a href="gioithieu.html">Giới thiệu</a>
                     </li>
                 </ul>            
             </div>
@@ -44,7 +44,7 @@
             <!-- content-2 -->
                 <div class="content-2">
                     <h2>2. Giá trị tạo ra của MELANI</h2>
-                        <p">Chúng tôi không chỉ bán 1 sản phẩm, chúng tôi mang đến cho bạn 1 giải pháp hoàn hảo. Chúng tôi không chỉ cung cấp sản phẩm tốt, chúng tôi mang đến cho bạn sự hiệu quả.</p>
+                        <p>Chúng tôi không chỉ bán 1 sản phẩm, chúng tôi mang đến cho bạn 1 giải pháp hoàn hảo. Chúng tôi không chỉ cung cấp sản phẩm tốt, chúng tôi mang đến cho bạn sự hiệu quả.</p>
                     <h3>2.1. Sự đa dạng về sản phẩm:</h3>
                         <p>Các trang web bán hàng công nghệ cung cấp đa dạng các sản phẩm công nghệ từ các thương hiệu nổi tiếng trên thế giới, đáp ứng mọi nhu cầu của người tiêu dùng.</p>
                         <p><img alt="" src="{{asset('public/Frontend//image/QC5.jpg')}}" style="width:auto ; height:600px;"></p>

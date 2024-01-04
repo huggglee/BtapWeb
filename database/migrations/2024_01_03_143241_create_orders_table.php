@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
+            $table->string('cus_name', 100);
+            $table->string('phone', 20);
+            $table->string('address', 20);
+            $table->string('add_info', 20);
             $table->decimal('price', 10, 2);
             $table->string('status'); 
             $table->timestamps(); // Thêm cột created_at và updated_at

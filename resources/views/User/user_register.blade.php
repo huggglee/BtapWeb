@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Đăng ký</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="{{asset('public/Frontend/user_register/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet"
+        href="{{ asset('public/Frontend/user_register/fonts/material-icon/css/material-design-iconic-font.min.css') }}">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="{{asset('public/Frontend/user_register/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('public/Frontend/user_register/css/style.css') }}">
 </head>
+
 <body>
 
     <div class="main">
@@ -20,28 +23,39 @@
             <!-- <img src="images/signup-bg.jpg" alt=""> -->
             <div class="container">
                 <div class="signup-content">
-                    <form action="{{route('postRegister')}}" method="POST" id="signup-form" class="signup-form">
+                    <form action="{{ route('postRegister') }}" method="POST" id="signup-form" class="signup-form">
                         @csrf
                         <h2 class="form-title">Đăng ký</h2>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="name" id="name" placeholder="Họ và tên"/>
+                            <input type="text" class="form-input" name="name" id="name"
+                                placeholder="Họ và tên" />
                         </div>
+                        @error('name')
+                            <div class="alert alert-danger alert-block" style="color: red">{{ $message }}</div>
+                        @enderror
                         <div class="form-group">
-                            <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
+                            <input type="email" class="form-input" name="email" id="email"
+                                placeholder="Email" />
                         </div>
+                        @error('email')
+                            <div class="alert alert-danger"  style="color: red">{{ $message }}</div>
+                        @enderror
                         <div class="form-group">
-                            <input type="password" class="form-input" name="password" id="password" placeholder="Mật khẩu"/>
+                            <input type="password" class="form-input" name="password" id="password"
+                                placeholder="Mật khẩu" />
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-input" name="confirmPassword" id="confirmPassword" placeholder="Xác nhận mật khẩu"/>
+                            <input type="password" class="form-input" name="confirmPassword" id="confirmPassword"
+                                placeholder="Xác nhận mật khẩu" />
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up" />
                         </div>
                     </form>
                     <p class="loginhere">
-                        Nếu bạn đã có tài khoản <a href="{{route('user.login')}}" class="loginhere-link">Đăng nhập tại đây</a>
+                        Nếu bạn đã có tài khoản <a href="{{ route('user.login') }}" class="loginhere-link">Đăng nhập tại
+                            đây</a>
                     </p>
                 </div>
             </div>
@@ -50,7 +64,8 @@
     </div>
 
     <!-- JS -->
-    <script src="{{asset('public/Frontend/user_register/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('public/Frontend/user_register/js/main.js')}}"></script>
+    <script src="{{ asset('public/Frontend/user_register/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('public/Frontend/user_register/js/main.js') }}"></script>
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 function increaseQuantity(inputId) {
   var quantityInput = document.getElementById(inputId);
   var currentQuantity = parseInt(quantityInput.value, 10);

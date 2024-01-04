@@ -32,9 +32,11 @@ class HomeController extends Controller
     {
         return view('user.tracuu');
     }
-    public function spct()
+    public function spct($id)
     {
-        return view('user.spct');
+        $product=Product::find($id);
+        // dd($product);
+        return view('user.spct',compact('product'));
     }
     public function pay()
     {

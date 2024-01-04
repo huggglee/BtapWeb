@@ -14,13 +14,14 @@
                         @foreach ($products as $product)
                             <div class="col-md-3 kc">
                                 <div class="anh">
-                                    <img src="{{ asset('public/storage//images/' . $product->img) }}" alt="">
+                                    <a href="{{route('spct',$product->id)}}"><img src="{{ asset('public/storage//images/' . $product->img) }}"
+                                            alt=""></a>
                                 </div>
                                 <div class="tensp">
                                     {{ $product->name }}
                                 </div>
                                 <div class="gia">
-                                    {{ number_format($product->price)}}đ
+                                    {{ number_format($product->price) }}đ
                                 </div>
                             </div>
                         @endforeach

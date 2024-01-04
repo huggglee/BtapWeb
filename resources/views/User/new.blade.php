@@ -10,10 +10,10 @@
             <div class="breadcrumb-lock col-12">
                 <ul class="breadcrumb">
                     <li>
-                        <a href="index.html">Trang chủ /</a>
+                        <a href="{{route('index')}}">Trang chủ /</a>
                     </li>
                     <li>
-                        <a href="new.html">/ Tin tức</a>
+                        <a href="#">/ Tin tức</a>
                     </li>
                 </ul>            
             </div>
@@ -145,7 +145,7 @@
         </div>
             <!-- content-new-2 -->
             <div class="col-12 col-md-4 tab-most-view">
-                <div class="container" ">
+                <div class="container">
                     <h3>Bài viết mới</h3>
                     <div class="row">
                         <div class="col-md-6">

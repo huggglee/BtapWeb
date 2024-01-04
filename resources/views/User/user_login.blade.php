@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Login V1</title>
+    <title>Đăng nhập</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -28,15 +28,23 @@
 </head>
 
 <body>
-
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
                     <img src="{{ asset('public/Frontend/user_login/images/img-01.png') }}" alt="IMG">
                 </div>
-                <form action="{{route('postLogin')}}" method="POST" class="login100-form validate-form" >
+                <form action="{{ route('postLogin') }}" method="POST" class="login100-form validate-form">
                     @csrf
+                    @if ($message = Session::get('error'))
+                        <div class="alert alert-danger alert-block">
+
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+
+                            <strong>{{ $message }}</strong>
+
+                        </div>
+                    @endif
                     <span class="login100-form-title" style="font-family: 'Times New Roman', Times, serif">
                         Đăng nhập
                     </span>
@@ -63,8 +71,8 @@
                     </div>
                     <div class="text-center p-t-136">
                         <div class="txt2"> Nếu bạn chưa có tài khoản.
-                           
-                            <a class="txt2" href="{{route('user.register')}}">
+
+                            <a class="txt2" href="{{ route('user.register') }}">
                                 Đăng ký ngay <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                             </a>
                         </div>
