@@ -70,4 +70,8 @@ class UserController extends Controller
     {
         return view('user.pay');
     }
+    public function form()
+    {
+        return view('user.form');
+    }
 }
