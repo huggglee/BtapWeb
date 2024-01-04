@@ -7,7 +7,7 @@
             @method('PUT')
             <div class="mb-3 form-group">
                 <label for="name" class="form-label">Tên danh mục</label>
-                <input type="text" class="form-control" id="name" name="name" value="{{ old('name') ? old('name') : ''}}">
+                <input type="text" class="form-control" id="name" name="name" value="{{ old('name') ? old('name') : "$category->name"}}">
                 @error('name')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

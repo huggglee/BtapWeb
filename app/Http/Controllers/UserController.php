@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -30,5 +31,10 @@ class UserController extends Controller
         User::create($request->all());
         return redirect()->route('user.login')->with('success','Đăng ký thành công');
         } else return redirect()->back()->with('error','Mật khẩu không trùng khớp');
+    }
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->back();
     }
 }

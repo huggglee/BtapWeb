@@ -27,6 +27,8 @@ Route::get('/login',[UserController::class,'login'])->name('user.login');
 Route::post('/login',[Usercontroller::class,'postLogin'])->name('postLogin');
 Route::get('/register',[UserController::class,'register'])->name('user.register');
 Route::post('/register',[Usercontroller::class,'postRegister'])->name('postRegister');
+Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
+Route::get('/product/{value}',[HomeController::class,'show'])->name('show.product');
 
 Route::prefix('admin')->group(function () {
     Route::get('/',[AdminController::class,'index'])->name('admin.index');
