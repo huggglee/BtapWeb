@@ -59,7 +59,7 @@
                     <div class="title-1">
                         <div class="logo">
                             <a href=""> <img
-                                    src="https://pos.nvncdn.com/26be7c-108267/store/20211001_drDdKcUKHoG0paeW6h9xKvP7.png"
+                                    src={{asset('public/Frontend//image/logo.png')}}
                                     alt=""></a>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="col">
                     <div class="payment">
-                        <img src="asset/image/payment.png" alt="">
+                        <img src="{{asset('public/Frontend//image/payment.png')}}" alt="">
                     </div>
                 </div>
             </div>

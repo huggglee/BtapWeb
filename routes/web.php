@@ -27,6 +27,17 @@ Route::get('/login',[UserController::class,'login'])->name('user.login');
 Route::post('/login',[Usercontroller::class,'postLogin'])->name('postLogin');
 Route::get('/register',[UserController::class,'register'])->name('user.register');
 Route::post('/register',[Usercontroller::class,'postRegister'])->name('postRegister');
+Route::get('/list-1',[Usercontroller::class,'list_1'])->name('list-1');
+Route::get('/list-2',[Usercontroller::class,'list_2'])->name('list-2');
+Route::get('/list-3',[Usercontroller::class,'list_3'])->name('list-3');
+Route::get('/list-4',[Usercontroller::class,'list_4'])->name('list-4');
+Route::get('/list-5',[Usercontroller::class,'list_5'])->name('list-5');
+Route::get('/gioithieu',[Usercontroller::class,'gioithieu'])->name('gioithieu');
+Route::get('/new',[Usercontroller::class,'new'])->name('new');
+Route::get('/tracuu',[Usercontroller::class,'tracuu'])->name('tracuu');
+
+
+
 
 Route::prefix('admin')->group(function () {
     Route::get('/',[AdminController::class,'index'])->name('admin.index');

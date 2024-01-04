@@ -1,0 +1,22 @@
+.product 
+{
+    padding-top: 20px;
+}
+.product .gia
+{
+    color: red;
+}
+.product .anh img
+{
+    width: 230px;
+    height: 230px;
+}
+.product .tensp
+{
+    margin-bottom: 5px;
+}
+.product .list-product .kc
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

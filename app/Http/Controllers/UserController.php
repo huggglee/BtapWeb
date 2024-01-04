@@ -31,4 +31,35 @@ class UserController extends Controller
         return redirect()->route('user.login')->with('success','Đăng ký thành công');
         } else return redirect()->back()->with('error','Mật khẩu không trùng khớp');
     }
+    public function list_1()
+    {
+        return view('user.list-1');
+    }
+    public function list_2()
+    {
+        return view('user.list-2');
+    }
+    public function list_3()
+    {
+        return view('user.list-3');
+    }
+    public function list_4()
+    {
+        return view('user.list-4');
+    }
+    public function list_5()
+    {
+        return view('user.list-5');
+    }  public function gioithieu()
+    {
+        return view('user.gioithieu');
+    }
+    public function new()
+    {
+        return view('user.new');
+    }
+    public function tracuu()
+    {
+        return view('user.tracuu');
+    }
 }
