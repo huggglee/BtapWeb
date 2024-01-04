@@ -39,7 +39,7 @@
 					Session()->put('msg',null);
 				}
 				?>
-				{{csrf_field()}}	
+				@csrf	
 				<span class="login100-form-title p-b-43">
 						Đăng nhập
 					</span>
